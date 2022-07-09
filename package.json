@@ -1,0 +1,29 @@
+{
+  "name": "edubin-education",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sonnguyen23399/edubin-education.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sonnguyen23399/edubin-education/issues"
+  },
+  "homepage": "https://github.com/sonnguyen23399/edubin-education#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.4",
+    "vite": "^2.9.13"
+  },
+  "dependencies": {
+    "slick-carousel": "^1.8.1"
+  }
+}

@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edubin Education</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./build/tailwind.css" />
+    <link rel="stylesheet" href="./build/app.css" />
+    <link rel="icon" type="image/x-icon" href="./public/images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <header id="header">
+        <div class="contact py-4 text-gray-6 text-sm md:text-base">
+          <div class="container mx-auto flex justify-center md:justify-between">
+            <div class="contact-left hidden md:block">
+              <a href="#" class="mr-5">
+                <i class="fa-solid fa-envelope mr-2"></i>
+                <span>info@yourmail.com</span>
+              </a>
+              <a href="#">
+                <i class="fa-solid fa-phone mr-2"></i>
+                <span>+0123-456-5678</span>
+              </a>
+            </div>
+            <div class="contact-right">
+              <span class="mr-2.5 hidden md:inline-block">Follow us: </span>
+              <a href="#" class="mx-1.5"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="#" class="mx-1.5"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+              <a href="#" class="mx-1.5"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="#" class="mx-1.5"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="#" class="mx-1.5"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+              <span class="ml-5 text-primary"><a href="#">Login</a></span>
+              <span class="mx-1.5 text-primary">/</span>
+              <span class="text-primary"><a href="#">Register</a></span>
+            </div>
+          </div>
+        </div>
+        <div class="navigation text-sm">
+          <div class="container mx-auto flex justify-between items-center">
+            <a href="#"
+              ><img
+                src="./public/images/logo.png"
+                alt="Edubin Education"
+                class="w-45 h-12 mr-8 my-4"
+            /></a>
+            <div class="flex justify-center items-center">
+              <ul class="hidden md:flex uppercase text-secondary font-bold mr-5">
+                <li class="py-8 mx-4 nav-link">
+                  <a href="#">Home</a>
+                  <ul class="sub-nav">
+                    <li class="py-2.5 px-4">
+                      <a href="#"><span>Home 01</span></a>
+                    </li>
+                    <li class="py-2.5 px-4">
+                      <a href="#"><span>Home 02</span></a>
+                    </li>
+                    <li class="py-2.5 px-4">
+                      <a href="#"><span>Home 03</span></a>
+                    </li>
+                    <li class="py-2.5 px-4">
+                      <a href="#"><span>Home 04</span></a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="py-8 mx-4 nav-link">
+                  <a href="#">Pages</a>
+                  <ul class="sub-nav">
+                    <li class="py-2.5 px-4">
+                      <a href="#"><span>About us</span></a>
+                    </li>
+                    <li class="py-2.5 px-4">
+                      <a href="#"><span>Gallery</span></a>
+                    </li>
+                    <li class="py-2.5 px-4">
+                      <a href="#"><span>Privacy Policy</span></a>
+                    </li>
+                    <li class="py-2.5 px-4">
+                      <a href="#"><span>FAQ</span></a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="py-8 mx-4 nav-link">
+                  <a href="#">Courses</a>
+                  <ul class="sub-nav">
+                    <li class="py-2.5 px-4">
+                      <a href="#"><span>Courses</span></a>
+                    </li>
+                    <li class="py-2.5 px-4">
+                      <a href="#"><span>Course Single</span></a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="py-8 mx-4 nav-link">
+                  <a href="#">Events</a>
+                  <ul class="sub-nav">
+                    <li class="py-2.5 px-4">
+                      <a href="#"><span>Events List 1</span></a>
+                    </li>
+                    <li class="py-2.5 px-4">
+                      <a href="#"><span>Events List 2</span></a>
+                    </li>
+                    <li class="py-2.5 px-4">
+                      <a href="#"><span>Event Single</span></a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="py-8 mx-4 nav-link">
+                  <a href="#">Teachers</a>
+                  <ul class="sub-nav">
+                    <li class="py-2.5 px-4">
+                      <a href="#"><span>Teachers</span></a>
+                    </li>
+                    <li class="py-2.5 px-4">
+                      <a href="#"><span>Teacher 2</span></a>
+                    </li>
+                    <li class="py-2.5 px-4">
+                      <a href="#"><span>Teacher Single</span></a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="py-8 mx-4 nav-link">
+                  <a href="#">Blog</a>
+                  <ul class="sub-nav">
+                    <li class="py-2.5 px-4">
+                      <a href="#"><span>Blog</span></a>
+                    </li>
+                    <li class="py-2.5 px-4">
+                      <a href="#"><span>Blog Single</span></a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="py-8 mx-4 nav-link">
+                  <a href="#">Shop</a>
+                  <ul class="sub-nav">
+                    <li class="py-2.5 px-4">
+                      <a href="#"><span>Shop</span></a>
+                    </li>
+                    <li class="py-2.5 px-4">
+                      <a href="#"><span>Shop Single</span></a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="py-8 mx-4 nav-link">
+                  <a href="#">Contact</a>
+                  <ul class="sub-nav">
+                    <li class="py-2.5 px-4">
+                      <a href="#"><span>Contact us</span></a>
+                    </li>
+                    <li class="py-2.5 px-4">
+                      <a href="#"><span>Contact us 2</span></a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="md:hidden">
+                <i class="fa-solid fa-bars text-3xl mr-5 text-secondary"></i>
+              </div>
+              <div class="actions text-secondary text-lg flex">
+                <a href="#"><i class="fa-solid fa-magnifying-glass mr-4"></i></a>
+                <a href="#"><i class="fa-solid fa-bag-shopping cart"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section id="slider" class="relative">
+        <div class="slide-prev"><i class="fa-solid fa-angle-left"></i></div>
+        <div class="slide-next"><i class="fa-solid fa-angle-right"></i></div>
+        <div class="slide">
+          <div class="relative">
+              <img src="./public/images/news_image_1.jpeg" alt="" />
+              <div class="container mx-auto">
+                <div
+                  class="absolute top-16 md:top-1/4 md:left-8 text-white md:px-20 md:max-w-[960px] md:w-7/12"
+                >
+                  <h1
+                    data-aos="fade-right"
+                    class="slide-heading md:text-6xl font-bold pb-7"
+                  >
+                    Choose the right theme for education
+                  </h1>
+                  <p data-aos="fade-left" class="font-bold pb-12">
+                    Donec vitae sapien ut libearo venenatis faucibus. Nullam quis
+                    ante. Etiam sit amet orci eget eros faucibus tincidunt Sed
+                    fringilla mauri amet nibh.
+                  </p>
+                  <div data-aos="fade-up">
+                    <button class="mr-2">Read More</button>
+                    <button>Learn More</button>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="relative">
+              <img src="./public/images/news_image_2.jpg" alt="" />
+              <div class="container mx-auto">
+                <div
+                  class="absolute top-16 md:top-1/4 md:left-8 text-white md:px-20 md:max-w-[960px] md:w-7/12"
+                >
+                  <h1
+                    data-aos="fade-right"
+                    class="slide-heading md:text-6xl font-bold pb-7"
+                  >
+                    Choose the right theme for education
+                  </h1>
+                  <p data-aos="fade-left" class="font-bold pb-12">
+                    Donec vitae sapien ut libearo venenatis faucibus. Nullam quis
+                    ante. Etiam sit amet orci eget eros faucibus tincidunt Sed
+                    fringilla mauri amet nibh.
+                  </p>
+                  <div data-aos="fade-up">
+                    <button class="mr-2">Read More</button>
+                    <button>Learn More</button>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="relative">
+              <img src="./public/images/news_image_3.jpeg" alt="" />
+              <div class="container mx-auto">
+                <div
+                  class="absolute top-16 md:top-1/4 md:left-8 text-white md:px-20 md:max-w-[960px] md:w-7/12"
+                >
+                  <h1
+                    data-aos="fade-right"
+                    class="slide-heading md:text-6xl font-bold pb-7"
+                  >
+                    Choose the right theme for education
+                  </h1>
+                  <p data-aos="fade-left" class="font-bold pb-12">
+                    Donec vitae sapien ut libearo venenatis faucibus. Nullam quis
+                    ante. Etiam sit amet orci eget eros faucibus tincidunt Sed
+                    fringilla mauri amet nibh.
+                  </p>
+                  <div data-aos="fade-up">
+                    <button class="mr-2">Read More</button>
+                    <button>Learn More</button>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="container mx-auto absolute translate-y-1/2 -bottom-40">
+          <div id="flatform" class="md:flex items-center justify-between">
+            <div class="text-white text-4xl md:w-3/12">
+              Best platform to learn everything
+            </div>
+            <div class="flatform-prev">
+              <i class="fa-solid fa-angle-left"></i>
+            </div>
+            <div class="md:w-7/12 flex items-center flatform-slick">
+              <div class="flatform-slide flatform-slide-1">
+                <img src="./public/images/courses.png" alt="" />
+                <div class="text-center text-lg text-white mt-4">Courses</div>
+              </div>
+              <div class="flatform-slide flatform-slide-2">
+                <img src="./public/images/admissions.png" alt="" />
+                <div class="text-center text-lg text-white mt-4">
+                  Admissions
+                </div>
+              </div>
+              <div class="flatform-slide flatform-slide-3">
+                <img src="./public/images/events.png" alt="" />
+                <div class="text-center text-lg text-white mt-4">Events</div>
+              </div>
+              <div class="flatform-slide flatform-slide-4">
+                <img src="./public/images/courses.png" alt="" />
+                <div class="text-center text-lg text-white mt-4">Courses</div>
+              </div>
+              <div class="flatform-slide flatform-slide-5">
+                <img src="./public/images/admissions.png" alt="" />
+                <div class="text-center text-lg text-white mt-4">
+                  Admissions
+                </div>
+              </div>
+              <div class="flatform-slide flatform-slide-6">
+                <img src="./public/images/events.png" alt="" />
+                <div class="text-center text-lg text-white mt-4">Events</div>
+              </div>
+            </div>
+            <div class="flatform-next">
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about-us">
+        <div class="container mx-auto">
+          <div class="md:flex justify-between mt-60">
+            <div class="md:w-5/12" data-aos="fade-right">
+              <div class="section-title mb-5" data-aos="fade-right">
+                About Us
+              </div>
+              <div class="text-5xl font-bold leading-tight max-w-sm">
+                Welcome to Edubin
+              </div>
+              <div class="my-5 text-gray-5 font-normal leading-7">
+                Lorem ipsum gravida nibh vel velit auctor aliquetn
+                sollicitudirem quibibendum auci elit cons equat ipsutis sem nibh
+                id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet
+                . Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt
+                mauris.
+              </div>
+              <div class="text-gray-5 font-normal leading-7">
+                auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit
+                amet nibh vulputate cursus a sit amet . Morbi accumsan ipsum
+                velit. Nam nec tellus a odio tincidunt mauris
+              </div>
+              <button class="mt-16">Learn More</button>
+            </div>
+            <div class="md:w-6/12 events-list mt-10 md:mt-0" data-aos="fade-left">
+              <h2 class="text-5xl md:text-4xl font-bold py-16 max-w-52 leading-tight">
+                Upcoming events
+              </h2>
+              <div class="flex flex-col justify-between">
+                <div class="text-sm">
+                  <i class="fa-regular fa-calendar-days text-primary"></i>
+                  <span class="text-gray-8 ml-1">2 December 2018</span>
+                  <a href="#">Campus clean workshop</a>
+                  <div class="flex justify-start">
+                    <div class="text-sm mr-5">
+                      <i class="fa-regular fa-clock text-primary"></i>
+                      <span class="text-gray-8 ml-1">10:00 Am - 3:00 Pm</span>
+                    </div>
+                    <div class="text-sm">
+                      <i class="fa-solid fa-location-dot text-primary"></i>
+                      <span class="text-gray-8 ml-1">Rc Auditorim</span>
+                    </div>
+                  </div>
+                </div>
+                <hr class="my-6" />
+                <div class="text-sm">
+                  <i class="fa-regular fa-calendar-days text-primary"></i>
+                  <span class="text-gray-8 ml-1">2 December 2018</span>
+                  <a href="#">Tech Summit</a>
+                  <div class="flex justify-start">
+                    <div class="text-sm mr-5">
+                      <i class="fa-regular fa-clock text-primary"></i>
+                      <span class="text-gray-8 ml-1">10:00 Am - 3:00 Pm</span>
+                    </div>
+                    <div class="text-sm">
+                      <i class="fa-solid fa-location-dot text-primary"></i>
+                      <span class="text-gray-8 ml-1">Rc Auditorim</span>
+                    </div>
+                  </div>
+                </div>
+                <hr class="my-6" />
+                <div class="text-sm">
+                  <i class="fa-regular fa-calendar-days text-primary"></i>
+                  <span class="text-gray-8 ml-1">2 December 2018</span>
+                  <a href="#">Environment conference</a>
+                  <div class="flex justify-start">
+                    <div class="text-sm mr-5">
+                      <i class="fa-regular fa-clock text-primary"></i>
+                      <span class="text-gray-8 ml-1">10:00 Am - 3:00 Pm</span>
+                    </div>
+                    <div class="text-sm">
+                      <i class="fa-solid fa-location-dot text-primary"></i>
+                      <span class="text-gray-8 ml-1">Rc Auditorim</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="apply">
+        <div class="container mx-auto md:flex">
+          <div class="text-white bg-background md:p-16 p-6">
+            <h2 class="font-bold text-3xl mb-5">Apply for Fall 2019</h2>
+            <p class="mb-8 font-medium">
+              Gravida nibh vel velit auctor aliquetn sollicitudirem sem
+              quibibendum auci elit cons equat ipsutis sem nibh id elituis sed
+              odio sit amet nibh vulputate cursus equat ipsutis.
+            </p>
+            <button data-aos="fade-up">Apply Now</button>
+          </div>
+          <div class="text-white md:p-16 p-6 bg-secondary mt-5 md:mt-0">
+            <h2 class="font-bold text-3xl mb-5">Apply for Scholarship</h2>
+            <p class="mb-8 font-medium">
+              Gravida nibh vel velit auctor aliquetn sollicitudirem sem
+              quibibendum auci elit cons equat ipsutis sem nibh id elituis sed
+              odio sit amet nibh vulputate cursus equat ipsutis.
+            </p>
+            <button data-aos="fade-up">Apply Now</button>
+          </div>
+        </div>
+      </section>
+      <section id="featured-courses">
+        <div class="container mx-auto">
+          <div class="section-title mb-4" data-aos="fade-right">
+            Our Courses
+          </div>
+          <div class="flex justify-between items-center">
+            <div class="text-5xl font-bold leading-tight">Featured Courses</div>
+            <div class="flex">
+              <div class="course-prev">
+                <i class="fa-solid fa-angle-left"></i>
+              </div>
+              <div class="course-next">
+                <i class="fa-solid fa-angle-right"></i>
+              </div>
+            </div>
+          </div>
+          <div class="courses-list mt-20">
+            <div class="course">
+              <div class="image-price">
+                <img
+                  class="image"
+                  src="/public/images/news_image_1.jpeg"
+                  alt=""
+                />
+                <div class="level">Beginner</div>
+                <i class="fa-regular fa-bookmark"></i>
+              </div>
+              <div class="course-content p-5">
+                <div class="flex">
+                  <div class="rate">
+                    <ul class="flex mr-4 mb-3">
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <div class="rate_quantity text-gray-6">5.0 (5)</div>
+                </div>
+                <a
+                  href="#"
+                  class="course-name name font-bold text-xl text-secondary"
+                >
+                  Learn JavaScript – Full Course for Beginners
+                </a>
+                <div class="flex items-center ml-auto text-gray-6 my-3">
+                  <i class="fa-regular fa-user h-4 mr-1 text-sm"></i>
+                  <div class="mr-2">12</div>
+                  <i class="fa-regular fa-clock mr-1"></i>
+                  <div>5h 20m</div>
+                </div>
+                <div class="flex items-center text-sm">
+                  <img
+                    src="/public/images/teacher_1.jpg"
+                    alt=""
+                    width="20"
+                    height="20"
+                    class="rounded-full mr-2"
+                  />
+                  <div class="font-medium text-gray-5">
+                    by <a href="#" class="text-secondary name">Hanna Ben</a> In
+                    <a href="#" class="text-secondary language">Languages</a>
+                  </div>
+                </div>
+                <div
+                  class="course-footer flex justify-between items-center mt-6 pt-5"
+                >
+                  <div class="flex items-center text-secondary">Free</div>
+                  <a
+                    href="#"
+                    class="flex justify-end items-center ml-auto text-sm"
+                  >
+                    <i
+                      class="fa-solid fa-cart-shopping h-4 mr-1 text-primary opacity-75"
+                    ></i>
+                    <div class="text-gray-8">Get Enrolled</div>
+                  </a>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="facilities">
+        <div class="md:flex px-4 md:px-0">
+          <div class="relative md:w-1/2">
+            <i class="fa-solid fa-play facilities-btn"></i>
+          </div>
+          <div class="md:w-1/2 text-white md:pl-20 font-bold">
+            <h2 class="text-4xl pb-9 md:pl-5">Our Facilities</h2>
+            <div class="md:flex items-center mb-8">
+              <div class="flex justify-center">
+                <img
+                  src="/public/images/facilites_certificate.png"
+                  alt="Facilites Certificate"
+                />
+              </div>
+              <div class="md:ml-8">
+                <h2 class="text-2xl font-bold mb-5">Global Certificate</h2>
+                <p class="font-normal">
+                  Gravida nibh vel velit auctor aliquetn auci elit cons
+                  solliazcitudirem sem quibibendum sem nibhutis.
+                </p>
+              </div>
+            </div>
+            <div class="md:flex items-center mb-8">
+              <div class="flex justify-center">
+                <img
+                  src="/public/images/facilites_support.png"
+                  alt="Facilites Certificate"
+                />
+              </div>
+              <div class="md:ml-8">
+                <h2 class="text-2xl font-bold mb-5">Alumni Support</h2>
+                <p class="font-normal">
+                  Gravida nibh vel velit auctor aliquetn auci elit cons
+                  solliazcitudirem sem quibibendum sem nibhutis.
+                </p>
+              </div>
+            </div>
+            <div class="md:flex items-center">
+              <div class="flex justify-center">
+                <img
+                  src="/public/images/facilites_book.png"
+                  alt="Facilites Certificate"
+                />
+              </div>
+              <div class="md:ml-8">
+                <h2 class="text-2xl font-bold mb-5">Books & Library</h2>
+                <p class="font-normal">
+                  Gravida nibh vel velit auctor aliquetn auci elit cons
+                  solliazcitudirem sem quibibendum sem nibhutis.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="featured-teachers">
+        <div class="container mx-auto">
+          <div class="section-title mb-5 mt-20" data-aos="fade-right">
+            Teachers
+          </div>
+          <div class="md:flex justify-between">
+            <div class="md:w-5/12" data-aos="fade-right">
+              <div class="text-5xl font-bold leading-tight">
+                Meet our Teachers
+              </div>
+              <div class="my-5 text-gray-5 font-normal leading-7">
+                Lorem ipsum gravida nibh vel velit auctor aliquetn
+                sollicitudirem quibibendum auci elit cons equat ipsutis sem nibh
+                id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet
+                . Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt
+                mauris.
+              </div>
+              <div class="text-gray-5 font-normal leading-7">
+                Auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit
+                amet nibh vulputate cursus a sit amet . Morbi accumsan ipsum
+                velit. Nam nec tellus a odio tincidunt mauris
+              </div>
+              <div class="text-gray-5 font-normal leading-7">
+                Buci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit
+                amet nibh vulputate cursus a sit amet . Morbi accumsan ipsum
+                velit. Nam nec tellus a odio tincidunt mauris
+              </div>
+              <button class="mt-16">Career With Us</button>
+            </div>
+            <div
+              class="md:w-6/12 teachers-list md:flex justify-between flex-wrap mt-10 md:mt-0"
+              data-aos="fade-left"
+            >
+              <div class="relative teacher">
+                <img src="/public/images/teacher_1.jpg" alt="" />
+                <div class="teacher-info">
+                  <a class="font-bold text-lg text-secondary" href="#"
+                    >Damian Green</a
+                  >
+                  <p class="text-gray-5 my-2">Chairman</p>
+                  <div class="text-secondary teacher-contact">
+                    <a href="#" class="mx-1.5"
+                      ><i class="fa-brands fa-facebook-f"></i
+                    ></a>
+                    <a href="#" class="mx-1.5"
+                      ><i class="fa-brands fa-youtube"></i
+                    ></a>
+                    <a href="#" class="mx-1.5"
+                      ><i class="fa-brands fa-twitter"></i
+                    ></a>
+                    <a href="#" class="mx-1.5"
+                      ><i class="fa-brands fa-instagram"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="relative teacher">
+                <img src="/public/images/teacher_2.jpg" alt="" />
+                <div class="teacher-info">
+                  <a class="font-bold text-lg text-secondary" href="#"
+                    >Rebeak Alig</a
+                  >
+                  <p class="text-gray-5 my-2">Art Teacher</p>
+                  <div class="text-secondary teacher-contact">
+                    <a href="#" class="mx-1.5"
+                      ><i class="fa-brands fa-facebook-f"></i
+                    ></a>
+                    <a href="#" class="mx-1.5"
+                      ><i class="fa-brands fa-youtube"></i
+                    ></a>
+                    <a href="#" class="mx-1.5"
+                      ><i class="fa-brands fa-twitter"></i
+                    ></a>
+                    <a href="#" class="mx-1.5"
+                      ><i class="fa-brands fa-instagram"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="relative teacher">
+                <img src="/public/images/teacher_3.jpg" alt="" />
+                <div class="teacher-info">
+                  <a class="font-bold text-lg text-secondary" href="#"
+                    >Hanna Ben</a
+                  >
+                  <p class="text-gray-5 my-2">Teacher</p>
+                  <div class="text-secondary teacher-contact">
+                    <a href="#" class="mx-1.5"
+                      ><i class="fa-brands fa-facebook-f"></i
+                    ></a>
+                    <a href="#" class="mx-1.5"
+                      ><i class="fa-brands fa-youtube"></i
+                    ></a>
+                    <a href="#" class="mx-1.5"
+                      ><i class="fa-brands fa-twitter"></i
+                    ></a>
+                    <a href="#" class="mx-1.5"
+                      ><i class="fa-brands fa-instagram"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="relative teacher">
+                <img src="/public/images/teacher_4.jpg" alt="" />
+                <div class="teacher-info">
+                  <a class="font-bold text-lg text-secondary" href="#"
+                    >Mark Alen</a
+                  >
+                  <p class="text-gray-5 my-2">Teacher</p>
+                  <div class="text-secondary teacher-contact">
+                    <a href="#" class="mx-1.5"
+                      ><i class="fa-brands fa-facebook-f"></i
+                    ></a>
+                    <a href="#" class="mx-1.5"
+                      ><i class="fa-brands fa-youtube"></i
+                    ></a>
+                    <a href="#" class="mx-1.5"
+                      ><i class="fa-brands fa-twitter"></i
+                    ></a>
+                    <a href="#" class="mx-1.5"
+                      ><i class="fa-brands fa-instagram"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="feedback-section">
+        <div class="overlay"></div>
+        <div class="container mx-auto">
+          <div class="section-title mb-5" data-aos="fade-right">Feeback</div>
+          <div
+            class="text-5xl font-bold text-white mb-10 md:mb-32"
+            data-aos="fade-right"
+          >
+            What Students Say
+          </div>
+          <div class="feedback-list text-white" data-aos="zoom-in">
+            <div class="feedback flex">
+              <div class="feedback-student">
+                <img
+                  src="/public/images/student_1.jpg"
+                  alt=""
+                  width="92"
+                  height="92"
+                />
+                <i class="fa-solid fa-quote-right"></i>
+              </div>
+              <div class="pt-5 ml-10 w-8/12">
+                <div class="mb-6">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit sed do
+                  eiusmod tempor incididunt ut labore et dolore Lorem ipsum
+                  dolor sit amet.
+                </div>
+                <div class="text-lg font-bold">James Smith</div>
+                <div class="text-base">Apps Developer</div>
+              </div>
+            </div>
+            <div class="feedback flex">
+              <div class="feedback-student">
+                <img src="/public/images/student_1.jpg" alt="" />
+                <i class="fa-solid fa-quote-right"></i>
+              </div>
+              <div class="pt-5 ml-10 w-8/12">
+                <div class="mb-6">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit sed do
+                  eiusmod tempor incididunt ut labore et dolore Lorem ipsum
+                  dolor sit amet.
+                </div>
+                <div class="text-lg font-bold">James Smith</div>
+                <div class="text-base">Apps Developer</div>
+              </div>
+            </div>
+            <div class="feedback flex">
+              <div class="feedback-student">
+                <img src="/public/images/student_1.jpg" alt="" />
+                <i class="fa-solid fa-quote-right"></i>
+              </div>
+              <div class="pt-5 ml-10 w-8/12">
+                <div class="mb-6">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit sed do
+                  eiusmod tempor incididunt ut labore et dolore Lorem ipsum
+                  dolor sit amet.
+                </div>
+                <div class="text-lg font-bold">James Smith</div>
+                <div class="text-base">Apps Developer</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="book-store" class="py-10 md:py-24">
+        <div class="container mx-auto">
+          <div class="md:flex justify-between items-center">
+            <div data-aos="fade-right">
+              <div class="section-title mb-5">
+                Book Store
+              </div>
+              <div class="text-5xl font-bold leading-tight">
+                Publications
+              </div>
+            </div>
+            <div data-aos="fade-left" class="my-10 md:mt-0">
+              <button>All Products</button>
+            </div>
+          </div>
+          <div class="mt:mt-20 md:flex justify-around">
+            <div class="book text-center">
+              <div class="book-img">
+                <img src="/public/images/book.jpg" alt="Book 9">
+              </div>
+              <a href="#">Book 9</a>
+              <p>£45</p>
+            </div>
+            <div class="book text-center">
+              <div class="book-img">
+              </div>
+              <a href="#">Book 8</a>
+              <p>£50</p>
+            </div>
+            <div class="book text-center">
+              <div class="book-img">
+              </div>
+              <a href="#">Book 7</a>
+              <p>£65</p>
+            </div>
+            <div class="book text-center">
+              <div class="book-img">
+              </div>
+              <a href="#">Book 6</a>
+              <p>£90</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="news-section">
+        <div class="container mx-auto">
+          <div class="section-title mb-5" data-aos="fade-right">
+            From the News
+          </div>
+          <div class="text-5xl font-bold leading-tight">
+            Latest News
+          </div>
+          <div class="md:flex justify-between mt-10">
+            <div class="text-gray-5 news">
+              <div class="news-img">
+                <img src="/public/images/news_image_1.jpeg" alt="News Image 1">
+              </div>
+              <div class="text-sm mt-5">
+                <a href="#" class="mr-4">
+                  <i class="fa-regular fa-calendar-days text-primary mr-1"></i>
+                  <span>17 JULY 2019</span>
+                </a>
+                <a href="#">
+                  <i class="fa-regular fa-user text-primary mr-1"></i>
+                  <span>MARK ALEN</span>
+                </a>
+              </div>
+              <a href="#" class="news-name">How to Learn Faster and Remember</a>
+              <p>Scelerisque ante platea nullam himenaeos quam sollicitudin ullamcorper</p>
+            </div>
+            <div class="text-gray-5 news">
+              <div class="news-img">
+                <img src="/public/images/news_image_2.jpg" alt="News Image 1">
+              </div>
+              <div class="text-sm mt-5">
+                <a href="#" class="mr-4">
+                  <i class="fa-regular fa-calendar-days text-primary mr-1"></i>
+                  <span>16 JULY 2019</span>
+                </a>
+                <a href="#">
+                  <i class="fa-regular fa-user text-primary mr-1"></i>
+                  <span>MARK ALEN</span>
+                </a>
+              </div>
+              <a href="#" class="news-name">Free Online Courses from Top Universities</a>
+              <p>Scelerisque ante platea nullam himenaeos quam sollicitudin ullamcorper</p>
+            </div>
+            <div class="text-gray-5 news">
+              <div class="news-img">
+                <img src="/public/images/news_image_3.jpeg" alt="News Image 1">
+              </div>
+              <div class="text-sm mt-5">
+                <a href="#" class="mr-4">
+                  <i class="fa-regular fa-calendar-days text-primary mr-1"></i>
+                  <span>16 JULY 2019</span>
+                </a>
+                <a href="#">
+                  <i class="fa-regular fa-user text-primary mr-1"></i>
+                  <span>MARK ALEN</span>
+                </a>
+              </div>
+              <a href="#" class="news-name">Learn Exactly How I Improved Education</a>
+              <p>Scelerisque ante platea nullam himenaeos quam sollicitudin ullamcorper</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="partners">
+        <div class="container mx-auto">
+          <div class="partners-list">
+            <div>
+              <img src="/public/images/icon1.png" alt="">
+            </div>
+            <div>
+              <img src="/public/images/icon2.png" alt="">
+            </div>
+            <div>
+              <img src="/public/images/icon3.png" alt="">
+            </div>
+            <div>
+              <img src="/public/images/icon4.png" alt="">
+            </div>
+            <div>
+              <img src="/public/images/icon5.png" alt="">
+            </div>
+            <div>
+              <img src="/public/images/icon6.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer id="footer">
+        <div class="footer-menu text-white">
+          <div class="container mx-auto md:flex justify-between">
+            <div class="md:w-1/4 mb-5 md:mb-0">
+              <a href="#">
+                <img src="/public/images/white-logo.png" alt="">
+              </a>
+              <p class="mt-6 mb-4">Edubin perfect for online courses and other institutes. It’s a complete solution with lms features and functionalities.</p>
+              <div class="social-network flex">
+                <a href="#">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+            <div class="md:w-1/4 mb-5 md:mb-0">
+              <h2 class="font-bold mb-5 text-lg">Feature Links</h2>
+              <div class="flex">
+                <div class="footer-links w-1/2">
+                  <div class="footer-link">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <a href="#">About Us</a>
+                  </div>
+                  <div class="footer-link">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <a href="#">Graduation</a>
+                  </div>
+                  <div class="footer-link">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <a href="#">Scholarship</a>
+                  </div>
+                  <div class="footer-link">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <a href="#">Contact</a>
+                  </div>
+                  <div class="footer-link w-1/2">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <a href="#">Result</a>
+                  </div>
+                </div>
+                <div class="footer-links">
+                  <div class="footer-link">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <a href="#">Admissions</a>
+                  </div>
+                  <div class="footer-link">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <a href="#">International</a>
+                  </div>
+                  <div class="footer-link">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <a href="#">Teachers</a>
+                  </div>
+                  <div class="footer-link">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <a href="#">Alumni</a>
+                  </div>
+                  <div class="footer-link">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <a href="#">Events</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="md:w-1/5 md:pl-10 mb-5 md:mb-0">
+              <h2 class="font-bold mb-5 text-lg">Support</h2>
+              <div class="footer-links">
+                <div class="footer-link">
+                  <i class="fa-solid fa-angle-right"></i>
+                  <a href="#">Language</a>
+                </div>
+                <div class="footer-link">
+                  <i class="fa-solid fa-angle-right"></i>
+                  <a href="#">WordPress</a>
+                </div>
+                <div class="footer-link">
+                  <i class="fa-solid fa-angle-right"></i>
+                  <a href="#">Privacy</a>
+                </div>
+                <div class="footer-link">
+                  <i class="fa-solid fa-angle-right"></i>
+                  <a href="#">FAQs</a>
+                </div>
+                <div class="footer-link">
+                  <i class="fa-solid fa-angle-right"></i>
+                  <a href="#">Support</a>
+                </div>
+              </div>
+            </div>
+            <div class="md:w-1/5">
+              <h2 class="font-bold mb-5 text-lg">Contact Us</h2>
+              <p class="mb-4">203, Envato Labs, Behind Alis Steet, Melbourne, Australia.</p>
+              <div class="mb-1">
+                <i class="fa-solid fa-phone mr-2"></i>
+                <span>+1 23-4567-8920</span>
+              </div>
+              <div class="mb-1">
+                <i class="fa-regular fa-envelope mr-2"></i>
+                <span>info@yourmail.com</span>
+              </div>
+              <div class="mb-1">
+                <i class="fa-solid fa-globe mr-2"></i>
+                <span>www.yourdomain.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <div class="container mx-auto flex justify-center md:justify-between">
+            <div>© 2022 Pixelcurve. All rights reserved.</div>
+            <div class="hidden md:block">
+              <a href="#">Language</a>
+              <a href="#">WordPress</a>
+              <a href="#">Privacy</a>
+              <a href="#">FAQs</a>
+              <a href="#">Support</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <button class="scroll-to-top"><a href="#header"><i class="fa-solid fa-angle-up text-xl"></i></a></button>
+    <div class="youtube-overlay">
+      <iframe
+        src="https://www.youtube.com/embed/bRRtdzJH1oE"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: "ease-out-back",
+        duration: 1500,
+      });
+    </script>
+  </body>
+</html>
