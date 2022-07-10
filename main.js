@@ -1,87 +1,93 @@
-const nav = document.querySelector('.navigation');
-const scrollToTop = document.querySelector('.scroll-to-top')
+const barsIcon = document.querySelector(".bars-icon");
+const headerMenu = document.querySelector(".header-menu");
+const subNavs = document.querySelectorAll(".sub-nav");
+const plusIcons = document.querySelectorAll(".nav-link > a");
+const nav = document.querySelector(".navigation");
+const scrollToTop = document.querySelector(".scroll-to-top");
 let navTop = nav.offsetTop;
 
+barsIcon.addEventListener("click", () => {
+  headerMenu.classList.toggle("visible");
+});
+
+for (let i = 0; i < subNavs.length; i++) {
+  plusIcons[i].addEventListener("click", () => {
+    subNavs[i].classList.toggle("visible");
+  });
+}
+
 function handleScroll() {
-  if (window.scrollY >= navTop) {    
-    nav.classList.add('fixed');
-    scrollToTop.classList.add('visible')
+  if (window.scrollY >= navTop) {
+    nav.classList.add("fixed");
+    scrollToTop.classList.add("visible");
   } else {
-    nav.classList.remove('fixed');
-    scrollToTop.classList.remove('visible')  
+    nav.classList.remove("fixed");
+    scrollToTop.classList.remove("visible");
   }
 }
 
-window.addEventListener('scroll', handleScroll);
+window.addEventListener("scroll", handleScroll);
 
-$(document).ready(function () {
-  $(".slide").slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 300000,
-    prevArrow: $(".slide-prev"),
-    nextArrow: $(".slide-next"),
-  });
+$(".slide").slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 300000,
+  prevArrow: $(".slide-prev"),
+  nextArrow: $(".slide-next"),
 });
 
-$(document).ready(function () {
-  $(".flatform-slick").slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    prevArrow: $(".flatform-prev"),
-    nextArrow: $(".flatform-next"),
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          autoplay: true,
-          autoplaySpeed: 2000
-        }
-      }
-    ]
-  });
+$(".flatform-slick").slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  prevArrow: $(".flatform-prev"),
+  nextArrow: $(".flatform-next"),
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+      },
+    },
+  ],
 });
 
-$(document).ready(function () {
-  $(".partners-list").slick({
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2,
-          autoplaySpeed: 2000
-        }
-      }
-    ]
-  });
+$(".partners-list").slick({
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  arrows: false,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        autoplaySpeed: 2000,
+      },
+    },
+  ],
 });
 
-$(document).ready(function () {
-  $(".feedback-list").slick({
-    infinite: true,
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    arrows: false,
-    dots: true,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          autoplaySpeed: 2000
-        }
-      }
-    ]
-  });
+$(".feedback-list").slick({
+  infinite: true,
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  arrows: false,
+  dots: true,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        autoplaySpeed: 2000,
+      },
+    },
+  ],
 });
 
 fetch("https://60d4611a61160900173cb070.mockapi.io/courses")
@@ -96,12 +102,11 @@ const getCouresList = (data) => {
   let html = "";
 
   data.map((data) => {
-
-    let lisList = ''
+    let lisList = "";
     for (let i = 0; i < 5; i++) {
-      if(i < data.rate) {
+      if (i < data.rate) {
         lisList += '<li><i class="fa-solid fa-star bg-primary"></i></li>';
-      } else lisList += '<li><i class="fa-regular fa-star"></i></li>'
+      } else lisList += '<li><i class="fa-regular fa-star"></i></li>';
     }
     console.log(lisList);
     html += `
@@ -169,23 +174,21 @@ const getCouresList = (data) => {
 
   coursesList.innerHTML = html;
 
-  $(document).ready(function () {
-    $(".courses-list").slick({
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      prevArrow: $(".course-prev"),
-      nextArrow: $(".course-next"),
-      responsive: [
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 1,
-            autoplay: true,
-            autoplaySpeed: 2000
-          }
-        }
-      ]
-    });
+  $(".courses-list").slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    prevArrow: $(".course-prev"),
+    nextArrow: $(".course-next"),
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
+        },
+      },
+    ],
   });
 };
 
@@ -197,7 +200,7 @@ document.querySelector(".youtube-overlay").addEventListener("click", () => {
   document.querySelector(".youtube-overlay").classList.remove("visible");
 });
 
-// Render books
+// Render books list
 const bookImgList = document.querySelectorAll(".book-img");
 for (key in bookImgList) {
   let innerHTML = `

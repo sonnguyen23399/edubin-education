@@ -103,6 +103,7 @@ button:hover {
     transition: all 0.8s;
     opacity: 0;
     z-index: -1;
+    background-color: var(--primary-color);
 }
 
 /* Header */
@@ -491,6 +492,7 @@ body {
 .visible {
     opacity: 1;
     z-index: 1;
+    visibility: visible !important;
 }
 
 .youtube-overlay iframe {
@@ -691,7 +693,6 @@ body {
     align-items: center;
     background-color: rgba(0, 33, 71, .8);
     opacity: 0;
-    transition: all 0.5s;
 }
 
 .book .book-overlay i {
@@ -861,6 +862,57 @@ body {
         min-width: 140px;
     }
 
+    .header-menu {
+        position: absolute;
+        top: 100%;
+        background-color: var(--white);
+        width: 100%;
+        left: 0;
+        visibility: hidden;
+    }
+
+    .header-menu li {
+        text-transform: capitalize;
+        padding: 0
+    }
+    
+    .sub-nav li {
+        color: #2b2a35;
+        border-top: 1px solid #d1d1d1;
+        padding: 12px 0;
+    }
+
+    .nav-link > a {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        padding: 12px 0;
+        border-top: 1px solid #d1d1d1;
+    }
+
+    .nav-link > a::after {
+        font-family: "Font Awesome 5 Free"; 
+        font-weight: 900; 
+        content: "\2b";
+
+    }
+
+    .sub-nav.visible {
+        display: block !important;
+    }
+
+    .nav-link > .sub-nav {
+        position: relative;
+        opacity: 0;
+        display: none;
+        width: 100%;
+        padding-left: 20px;
+    }
+
+    .nav-link .sub-nav li {
+        background-color: unset;
+    }
+
     .slide .slide-heading {
         line-height: 42px;
         font-size: 42px;
@@ -941,3 +993,4 @@ body {
     }
 
 }
+
